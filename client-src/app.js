@@ -12,15 +12,10 @@ const App = () => (
   <Router>
     <div>
       <header>
-        <Link to="/about">About</Link>
-        {' '}
-        <Link to="/">Login</Link>
-        {' '}
       </header>
       <main>
         <Switch>
           <Route exact path="/" component={Login} />
-          <Route path="/about" component={About} />
         </Switch>
       </main>
     </div>

@@ -5,13 +5,19 @@
 
 
 let express = require('express'),
-  path = require('path');
+    path = require('path'),
+    bodyParser = require('body-parser'),
+    apiRoutes = require('./ApiRoutes');
 
 
 
 //  create server app
 let app = express();
 let port = process.env.PORT || 3000;
+
+
+app.use(bodyParser.json());
+app.use(apiRoutes);
 
 
 const publicPath = path.join(__dirname, '/../client-build/');

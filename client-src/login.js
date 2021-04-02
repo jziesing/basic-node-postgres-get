@@ -2,8 +2,8 @@ import React from 'react';
 
 const Login = () => (
   <div>
-    <h1>Login</h1>
-    <strong>Login page</strong>
+    <h1>Get Things</h1>
+    <a href="/things">Go Get Things!</a>
   </div>
 );
 
