@@ -6,7 +6,7 @@ const { Client } = require('pg');
 
 ApiRoutes.get("/things/", function (req, res) {
 
-    client = new Client({
+    let currclient = new Client({
         connectionString: process.env.DATABASE_URL,
         ssl: {
             rejectUnauthorized: false
