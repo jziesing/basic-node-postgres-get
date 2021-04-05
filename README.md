@@ -1,6 +1,6 @@
-# minimal-react-router-v4-webpack-babel-setup
+# basic node app to show postgres performance
 
-basic template to make react apps with:
+built from basic template to make react apps with:
 - react (v17.x)
 - react-router-dom (v5.x)
 - babel (v7.x)
@@ -8,10 +8,8 @@ basic template to make react apps with:
 - served by node.js server, NOT create-react-app
 
 
-**this project is just a template to use instead of create-react-app**
+**this project is just way to show requests to a node server calling a postgres db**
 
-
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/jziesing/minimal-react-router-v4-webpack-babel-setup)
 
 
 ### Install
