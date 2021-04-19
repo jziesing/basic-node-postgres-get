@@ -19,7 +19,7 @@ ApiRoutes.get("/things/", function (req, res) {
     
     console.log('is connectED');
 
-    currclient.query('SELECT Id, Name FROM Salesforce.Thing__c;', (err, resp) => {
+    currclient.query('SELECT * FROM salesforce.thing__c;', (err, resp) => {
         if (err){
             console.log(err);
             res.send('error');
