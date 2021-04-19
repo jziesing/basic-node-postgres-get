@@ -19,6 +19,7 @@ ApiRoutes.get("/things/", function (req, res) {
         if (err){
             res.send('error');
         }
+        console.log(resp);
         currclient.end();
         res.send(resp.rows);
     });
