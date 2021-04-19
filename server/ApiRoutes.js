@@ -12,11 +12,16 @@ ApiRoutes.get("/things/", function (req, res) {
             rejectUnauthorized: false
           }
     });
-
+    
+    console.log('before connect');
+    
     currclient.connect();
+    
+    console.log('is connectED');
 
     currclient.query('SELECT Id, Name FROM Salesforce.Thing__c;', (err, resp) => {
         if (err){
+            console.log(err);
             res.send('error');
         }
         console.log(resp);
