@@ -3,7 +3,6 @@
  */
 "use strict";
 // new rel
-//require ('newrelic');
 
 let express = require('express'),
     path = require('path'),
