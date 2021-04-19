@@ -8,7 +8,6 @@ ApiRoutes.get("/things/", function (req, res) {
 
     let currclient = new Client({
         connectionString: process.env.DATABASE_URL,
-        statement_timeout:: 25000,
         ssl: {
             rejectUnauthorized: false
           }
