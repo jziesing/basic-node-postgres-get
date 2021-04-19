@@ -21,6 +21,7 @@ ApiRoutes.get("/things/", function (req, res) {
 
     currclient.query('SELECT * FROM salesforce.thing__c;', (err, resp) => {
         if (err){
+            console.log('is ERROR');
             console.log(err);
             res.send('error');
         }
