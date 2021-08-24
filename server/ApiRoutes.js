@@ -12,14 +12,14 @@ ApiRoutes.get("/things/", function (req, res) {
             rejectUnauthorized: false
           }
     });
-    
+
     console.log('before connect');
-    
+
     currclient.connect();
-    
+
     console.log('is connectED');
 
-    currclient.query('SELECT * FROM salesforce.thing__c;', (err, resp) => {
+    currclient.query('SELECT * FROM public.thing;', (err, resp) => {
         if (err){
             console.log('is ERROR');
             console.log(err);
